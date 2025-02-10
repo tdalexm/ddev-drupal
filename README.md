@@ -63,10 +63,11 @@ Es recomendable **eliminar la distribución** que se instala por defecto con el 
 ```powershell
 wsl --unregister Ubuntu-24.04
 ```
+## Instalaciones
 
-## Instalación de Chocolatey
+### 1. Chocolatey
 
-Chocolatey es un administrador de paquetes para Windows.
+Chocolatey es un administrador de paquetes para Windows. Necesario para instalaciones posteriores.
 
 Para instalar Chocolatey:
 
@@ -80,7 +81,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
 iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex
 ```
 
-## Instalar DDEV y DOCKER en Windows
+### 2. Instalar DDEV y DOCKER en Windows
 
 Para poder correr DDEV en WSL hay que instalarlo en local e instalar docker.
 
@@ -91,9 +92,9 @@ Para poder correr DDEV en WSL hay que instalarlo en local e instalar docker.
 chocolatey install ddev docker-desktop
 ```
 
-> [!IMPORTANT]: Reiniciar Es necesario reiniciar el ordenador después de instalarlo.
+> [!IMPORTANT]: Es necesario reiniciar el ordenador después de instalarlo.
 
-## Instalar DOCKER y DDEV en WSL
+### 3. Instalar DOCKER y DDEV en WSL
 
 Ejecutar el bash `install-ddev.sh` que se encuentra en este repositorio.
 
@@ -101,6 +102,6 @@ Ejecutar el bash `install-ddev.sh` que se encuentra en este repositorio.
 
 Cuando se reinicie WSL es necesario volver a lanzar a lanzar el script para configurar los permisos de docker en WSL.
 
-## Instalación de drupal
+### 4. Instalación de drupal
 
 Para instalar y montar el entorno Drupal es necesario ejecutar el archivo `setup-drupal.sh` y seguir las instrucciones.
