@@ -27,6 +27,7 @@ wsl --install -d <distribution-name>
 ```powershell
 wsl --list
 ```
+El resultado de este comando también muestra la **distribución por defecto** del sistema `Ubuntu (predeterminado)`
 
 Apagar WSL:
 
@@ -34,7 +35,6 @@ Apagar WSL:
 wsl --shutdown
 ```
 
-El resultado de este comando también muestra la **distribución por defecto** del sistema `Ubuntu (predeterminado)`
 
 ## Ejecutar WSL
 
@@ -105,3 +105,27 @@ Cuando se reinicie WSL es necesario volver a lanzar a lanzar el script para conf
 ### 4. Instalación de drupal
 
 Para instalar y montar el entorno Drupal es necesario ejecutar el archivo `setup-drupal.sh` y seguir las instrucciones.
+
+## DDEV
+
+
+```shell
+🌐 URL: https://${SITE_URL}"
+🔑 Drupal: ${DRUPAL_USER} / ${DRUPAL_PASS}"
+🐬 MySQL: root / root"
+🗄️ BBDD: db / db"
+📂 Directorio: ${PROJECT_ROOT}
+----------------------------------------------------------------
+💻 Comandos:
+    ddev composer install           # Instalación de dependencias
+    ddev composer require <paquete> # Instalación de un paquete
+    ddev poweroff                   # Apaga todos los contendores
+
+    ddev import-db <file>           # Importa una base de datos
+    ddev export-db <file>           # Exporta la base de datos
+
+    ddev start/stop                 # Iniciar/parar proyecto   
+    ddeb restart                    # Reiniciar proyecto
+    ddev drush config:export        # Exportar configuraciones
+    ddev drush config:import        # Importar configuraciones
+```
