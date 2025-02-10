@@ -106,6 +106,13 @@ Cuando se reinicie WSL es necesario volver a lanzar a lanzar el script para conf
 
 Para instalar y montar el entorno Drupal es necesario ejecutar el archivo `setup-drupal.sh` y seguir las instrucciones.
 
+> [!IMPORTANT]: En caso de no poder ejecutar los scripts, ni este ni el anterior, es necesario agregarles permisos de ejecución.
+ 
+```shell
+sudo chmod +x setup-drupal.sh
+bash ./setup-drupal.sh
+```
+
 ## [DDEV](https://ddev.com/)
 
 ```shell
